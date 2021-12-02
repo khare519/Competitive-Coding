@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String args[] ) throws Exception {
+      int t,m;
+        Scanner sc=new Scanner(System.in);
+        t=sc.nextInt();
+        for(m=1;m<=t;m++)
+        {
+          int n,k,a,b;
+         n=sc.nextInt();
+            k=sc.nextInt();
+            int c=n;
+           while(n>=k)
+           {
+             a=n/k;
+               b=n%k;
+               c+=a;
+               n=a+b;
+           }
+            System.out.println(c);
+         }
+        
+    }
+}
